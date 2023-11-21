@@ -23,6 +23,6 @@ jobs:
     - name: Build & Push Image
       run: |
         cd ./python
-        echo ${YAHoo.com020291}| docker login -u ${azersh}--password-stdin
+        echo ${YAHoo.com020291}| docker login -u ${azersh} --password-stdin
         docker image build -t azersh/gitops .
         docker push azersh/gitops
